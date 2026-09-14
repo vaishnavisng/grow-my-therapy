@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/*
+  Warm editorial palette — refined. One place to re-theme.
+  ivory bg · beige secondary · charcoal ink · slate body · sage accent · warm-gray lines.
+*/
+@theme {
+  --color-cream: #f5f1e9; /* primary background — warm ivory */
+  --color-sand: #e8ded0; /* secondary section background — soft beige */
+  --color-brand: #49635f; /* accent — muted sage / blue-green */
+  --color-brand-dark: #2b3a37; /* deep sage — hovers / dark detail */
+  --color-brand-soft: #dce3de; /* faint sage — subtle offset layer */
+  --color-ink: #293331; /* primary text — deep charcoal */
+  --color-muted: #52636a; /* secondary text — muted slate */
+  --color-accent: #49635f; /* accent (== brand sage) */
+  --color-line: #c9c4b9; /* borders — extremely subtle warm gray */
+
+  --font-serif: var(--font-display), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Editorial serif headings — weight 400, tight tracking, never bold */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.015em;
+}
+
+/* Keyboard focus — visible everywhere, hidden for mouse users */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+  font-size: 0.7rem;
+}
+
+/* Understated CTA link — thin underline that darkens/settles on hover */
+.cta-link {
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  font-size: 0.72rem;
+  display: inline-block;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid currentColor;
+  transition: color 300ms ease, letter-spacing 300ms ease, opacity 300ms ease;
+}
+.cta-link:hover {
+  letter-spacing: 0.16em;
+  opacity: 0.75;
+}
