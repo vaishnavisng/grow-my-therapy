@@ -14,7 +14,7 @@ export default function Section({ children, id, className = "", narrow, compact 
   return (
     <section
       id={id}
-      className={`${compact ? "py-16 md:py-20 lg:py-24" : "py-24 md:py-32 lg:py-36"} ${className}`}
+      className={`${compact ? "py-10 md:py-16 lg:py-20" : "py-16 md:py-24 lg:py-28"} ${className}`}
     >
       <div
         className={`mx-auto w-full ${compact ? "px-4 sm:px-8 lg:px-12" : "px-6 sm:px-10 lg:px-16"} ${
