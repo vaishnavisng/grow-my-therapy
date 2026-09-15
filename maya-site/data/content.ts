@@ -114,6 +114,23 @@ export const approach = {
   eyebrow: "How I work",
   title: "A warm, collaborative approach with real structure",
   body: "My work blends evidence-based methods with a warm, collaborative style — enough structure to give sessions direction, and enough space for reflection to go deeper. The priorities stay the same throughout: your safety, feeling more stable, and coping strategies you can sustain long after our work together.",
+  points: [
+    {
+      label: "01",
+      title: "Feel safe first",
+      body: "We begin with a pace that feels manageable, so you can settle in, understand what brings you here, and feel more grounded before we go deeper.",
+    },
+    {
+      label: "02",
+      title: "Build practical tools",
+      body: "Together we identify the patterns, triggers, and beliefs keeping stress or trauma in motion and translate them into skills you can use outside sessions.",
+    },
+    {
+      label: "03",
+      title: "Shift the pattern",
+      body: "The goal isn't just symptom relief — it's more insight, steadier nervous-system regulation, and a kinder relationship with yourself that lasts beyond therapy.",
+    },
+  ],
 };
 
 // "Our Office" — a new section not in the original template. Real office photos.
